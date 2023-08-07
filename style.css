@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    
+    background-image: url(balls.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    
+    
+    
+    
+}
+
+#content{
+    
+    font-size: large;
+    color: aliceblue;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+.logos{
+    display: flex;
+    height: 100px;
+    width: 10px;
+    animation: HIHIT 4s;
+    animation-iteration-count: infinite;
+    justify-content: center;
+    justify-self: center;
+    margin: auto;
+
+    
+    
+    
+}
+.logos:hover{
+    opacity: 1;
+}
+
+@keyframes HIHIT{
+    from{
+        transform: rotate(0deg);
+    }
+    25%{transform: rotate(-45deg)
+
+    }
+    to{
+        transform: rotate(360deg)
+
+    }
+}
