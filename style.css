@@ -1,55 +1,84 @@
-body{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    
-    background-image: url(images/balls.jpg);
-    background-position: center;
-    background-repeat: repeat;
-    
-    
-    
-    
+html {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+body {
+	background-image: url(images/balls.jpg);
+	background-position: center;
+	background-repeat: repeat;
+
+	margin-bottom: 3em;
+	/* a generous margin for the spinning logo */
+	/* prevents the page from resizing a lot */
+	/* this way we can see it spinning in full */
+}
+
+h1#pagetitle {
+	background: #fffc;
+}
+
+p {
+	background: #fffc;
+	color: black;
+
+	padding: 0ch 1ch;
+
+	border-radius: 0.25ch;
+}
+
+p > code#main_image_caption {
+	color: black;
+}
+
+a {
+	color: red;
+}
+
+h1 {
+	color: black;
+}
+
+span#lo {
+	text-decoration: line-through;
+}
+
+span#hi {
+	text-decoration: underline;
 }
 
 #content{
-    
-    font-size: large;
-    color: aliceblue;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    
-    
+	font-size: large;
+	color: aliceblue;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
 }
 
 .logos{
-    display: flex;
-    height: 100px;
-    width: 10px;
-    animation: HIHIT 4s;
-    animation-iteration-count: infinite;
-    justify-content: center;
-    justify-self: center;
-    margin: auto;
+	display: flex;
+	height: 100px;
+	width: 10px;
 
-    
-    
-    
+	animation: HIHIT 4s;
+	animation-iteration-count: infinite;
+
+	justify-content: center;
+	justify-self: center;
+
+	margin: auto;
 }
 .logos:hover{
-    opacity: 1;
+	opacity: 1;
 }
 
 @keyframes HIHIT{
-    from{
-        transform: rotate(0deg);
-    }
-    25%{transform: rotate(-45deg)
-
-    }
-    to{
-        transform: rotate(360deg)
-
-    }
+	from {
+		transform: rotate(0deg);
+	} 25% {
+		transform: rotate(-45deg)
+	} to {
+		transform: rotate(360deg)
+	}
 }
