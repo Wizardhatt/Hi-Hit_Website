@@ -32,8 +32,19 @@ p > code#main_image_caption {
 	color: black;
 }
 
-a {
-	color: red;
+:is(p):has(a:only-child) {
+	> a {
+		color: red;
+		filter: brightness(0.6);
+		&:hover {
+			filter: brightness(1.6);
+		}
+	}
+	transition: 1s linear;
+	&:hover {
+		rotate: 67turn;
+		transition: 0s linear;
+	}
 }
 
 h1 {
